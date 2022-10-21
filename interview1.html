@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT-DAY1</title>
+</head>
+<body>
+    <center><h1 style="color: red;"> REACT-INTERVIEW</h1></center>
+    <pre style="font-size: 18px;">
+   <ol>
+    <li style="color: red;">What is Virtual DOM</li>
+    <span>ans.The Virtual DOM (VDOM) is an in-memory representation of Real DOM. 
+        The representation of a UI is kept in memory and synced with the "real" DOM. 
+        It's a step that happens between the render function being called and the displaying of elements on the screen. 
+        This entire process is called reconciliation.
+      <b> VIRTUAL DOM works in three stages: </b>
+        <ol type="i">
+            <li>Whenever any underlying data changes, the entire UI is re-rendered in Virtual DOM representation.</li>
+            <img src="vdom1.png" alt="">
+            <li>Then the difference between the previous DOM representation and the new one is calculated.</li>
+            <img src="vdom2.png" alt="">
+            <li>Once the calculations are done, the real DOM will be updated with only the things that have actually changed.</li>
+            <img src="vdom3.png" alt="">
+        </ol>
+    </span>
+    <li style="color: red;">What is SPA</li>
+    <span>ans.SPA stands for Single Page Application. It is a very common way of programming websites these days.
+         The idea is that the website loads all the HTML/JS the first time you visit. 
+         When you then navigate, the browser will only rerender the content without refreshing the website.
+        This is used to make the user experience feel a lot smoother. 
+        You can tell when it’s a SPA or multi-page application when navigating between menus often because a multi-page application will reload, making the whole UI blink fast depending on the content. 
+        This is due to it refreshing the website. A SPA will instead feel smooth in the transaction as it simply shows other content without refreshing.</span>
+
+    <li style="color: red;">What is difference between class and functional component</li>
+    <table border="2px",width="100%">
+        <tr>
+            <th>Class Component</th>
+            <th>Functional Components</th> 
+        </tr>
+        <tr>
+            <td>Class components can be used when you are doing data operations and server calls.</td>
+            <td>Functional Components can be used mostly when you want to create dumb or stateless components</td>
+        </tr>
+        <tr>
+            <td>Contain lifecycle methods</td>
+            <td>These components does not have lifecycle methods, they have hooks like useEffect</td>
+        </tr>
+        <tr>
+            <td>Constructor structure is required since these are class components.</td>
+            <td>Complete constructor structure is not required in these components, so they are easy to handle</td>
+        </tr>
+        <tr>
+            <td>Contains state variables</td>
+            <td>Do not have state variables, they have hooks like useState</td>
+        </tr>
+        <tr>
+            <td>A class component requires you to extend from React. Component and create a render function which returns a React element.</td>
+            <td>A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
+        </tr>
+    </table>
+    <li style="color: red;">What does mean by state and its use in react?</li>
+    <span>ans.State of a component is an object that holds some information that may change over the lifetime of the component.
+        State is used for internal communication inside a component.
+        state is mutable. 
+        We should always try to make our state as simple as possible and minimize the number of stateful components.
+        State is similar to props, but it is private and fully controlled by the component ,i.e., it is not accessible to any other component till the owner component decides to pass it.
+    </span>
+
+    <li style="color: red;">What is JSX and why do we use it instead of js?
+
+    </li>
+    <span>ans.JSX stands for JavaScript XML.
+        JSX allows us to write HTML in React.
+        JSX makes it easier to write and add HTML in React.
+       <b>USE:</b>
+       JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.
+       JSX converts HTML tags into react elements.
+       JSX is easy used to debug.   
+    </span>
+    <li style="color: red;">What is package.json
+    </li>
+    <span>ans.package.json is used to store the metadata associated with the project as well as to store the list of dependency packages.
+         In order to add dependency packages to your projects, you need to create package.json file. 
+        The file makes it easy for others to manage and install the packages associated with the project.</span>
+   </ol>
+    </pre>
+
+
+</body>
+</html>
+</body>
+</html>
